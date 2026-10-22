@@ -3,7 +3,7 @@
 -- ==========================================
 CREATE OR REPLACE VIEW core.vw_customer_support AS
 SELECT 
-    customer_id,
+    c.customer_id,
     first_name,
     LEFT(last_name, 1) || '***' AS masked_last_name,
     status
